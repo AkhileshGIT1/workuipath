@@ -1,0 +1,12 @@
+﻿{
+  "Name": "Chrome (71) UiPath Tutorial  UiPath Excel Automation  Uipath Excel Activities  Uipat",
+  "Type": "App",
+  "Id": "dpNxhKAuKk-WncLGfPMYww",
+  "Reference": "2qAuSQF-N0eJntgrBalVHQ/dpNxhKAuKk-WncLGfPMYww",
+  "Created": "2025-09-01T11:56:54.151583Z",
+  "Updated": "2025-09-01T11:56:54.151583Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.14.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.6.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

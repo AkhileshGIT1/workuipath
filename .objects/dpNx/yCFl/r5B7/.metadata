@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Chrome New Tab",
+  "Type": "Screen",
+  "Id": "r5B7MWRgYUS9hQCxSjHKOQ",
+  "Reference": "2qAuSQF-N0eJntgrBalVHQ/r5B7MWRgYUS9hQCxSjHKOQ",
+  "ParentRef": "2qAuSQF-N0eJntgrBalVHQ/yCFlc7Aum0O2LZ7OxqYXhw",
+  "Created": "2025-09-01T11:59:54.0773078Z",
+  "Updated": "2025-09-01T11:59:54.0773078Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.14.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.6.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}
