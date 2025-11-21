@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="ycYvZx1JnUKh9mp6E6TIgg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="newtab" CVScreenId="f928026a-6bfa-4309-8640-5d7834152592" CvElementArea="156, 65, 1597, 43" CvType="InputBox" DesignTimeRectangle="156, 65, 1597, 43" ElementType="InputBox" Guid="40e6a214-ab02-49db-9f7e-c2b3011054b9" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='New tab - Google Chrome' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="f928026a-6bfa-4309-8640-5d7834152592" CvTextArea="167, 75, 260, 25" CvTextArgument="G Search Google or type a URL" CvType="Text" DesignTimeRectangle="167, 75, 260, 25" ElementType="Text" Guid="6ab31c16-d176-4e61-90d4-132296f64f68" SearchSteps="CV" TargetType="ComputerVisionBased" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="a136191f762047ba154f1f9153b34998.png" xmlns="">0on0qVRndcEapXtDBubdWOQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>
