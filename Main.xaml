@@ -1,0 +1,367 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Reflection.MetadataLoadContext</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="909.2,3309.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Always" DisplayName="Use Browser Chrome: New tab" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="483.2,589.6" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" IsDisplayNameAuto="True" ScopeGuid="d9747aec-fc06-4f2e-aaf0-40dc1a1efd7b" Version="V2" WindowResize="Maximize">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="449.6,340.8" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into ''editable text Address a…''" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,279.2" sap2010:WorkflowViewState.IdRef="NTypeInto_1" InteractionMode="HardwareEvents" ScopeIdentifier="d9747aec-fc06-4f2e-aaf0-40dc1a1efd7b" Text="Zoho.com[k(Enter)]" Version="V5">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="" CVScreenId="ab04cc80-e45f-4987-a64b-85327a8d2e04" CvElementArea="156, 65, 1599, 43" CvType="InputBox" DesignTimeRectangle="205, 72, 1527, 31" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;ctrl name='New tab - Google Chrome' role='pane' /&gt;&lt;ctrl name='Address and search bar' role='editable text' /&gt;" FuzzySelectorArgument="&lt;ctrl name='New tab - Google Chrome' role='pane' matching:name='fuzzy' fuzzylevel:name='0.0' /&gt;&lt;ctrl name='Address and search bar' role='editable text' automationid='' matching:name='fuzzy' fuzzylevel:name='0.0' matching:automationid='fuzzy' fuzzylevel:automationid='0.0' /&gt;" Guid="10e03c02-b762-49e3-bca9-334e0112b372" InformativeScreenshot="c8cac4ef7c6514bf6833884d05c60f26.png" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='New tab - Google Chrome' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive">
+                  <uix:TargetAnchorable.PointOffset>
+                    <uix:PointOffset />
+                  </uix:TargetAnchorable.PointOffset>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+              <uix:NTypeInto.VerifyOptions>
+                <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionTypeIntoOptions.Retry>
+                  <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                </uix:VerifyExecutionTypeIntoOptions>
+              </uix:NTypeInto.VerifyOptions>
+            </uix:NTypeInto>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-9, -9, 1938, 1048" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="775dfb6992b937d73450b111ce3058e7.png" Selector="&lt;html app='chrome.exe' title='New tab' /&gt;" Url="chrome://newtab/" Version="V2" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Zoho | Cloud Software Suite for Businesses" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="483.2,2696.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" IsDisplayNameAuto="True" ScopeGuid="791fff33-2dc7-42ed-b7ec-01c9b2d31693" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="449.6,2456.8" sap2010:WorkflowViewState.IdRef="Sequence_4">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:String" Name="clipError" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click ''Sign In''" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,225.6" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="791fff33-2dc7-42ed-b7ec-01c9b2d31693" Version="V5">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="zoho.com" CVScreenId="56e0869b-92aa-4a81-a643-d083397f4723" CvTextArea="1694, 260, 60, 21" CvTextArgument="Sign In" CvType="Text" DesignTimeRectangle="1679, 252, 92, 39" DesignTimeScaleFactor="1.25" ElementType="Text" FullSelectorArgument="&lt;webctrl class='zgh-login' parentid='header' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl class='zgh-login' parentid='header' tag='A' type='' aaname='Sign In' matching:class='fuzzy' fuzzylevel:class='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Sign In' /&gt;" Guid="7bb18d5f-75b5-4404-869f-1c59b56abdc7" InformativeScreenshot="c2b121467be9b952fa23ab23987445a9.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Zoho | Cloud Software Suite for Businesses' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive">
+                  <uix:TargetAnchorable.PointOffset>
+                    <uix:PointOffset />
+                  </uix:TargetAnchorable.PointOffset>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into ''INPUT login_id''" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,286.4" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="791fff33-2dc7-42ed-b7ec-01c9b2d31693" Text="akhileshgolupatidar@gmail.com" Version="V5">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="accounts.zoho.in/signin" DesignTimeRectangle="475, 599, 498, 55" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='login_id' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='login_id' tag='INPUT' type='text' class='textbox uvtextindent0' placeholder='Email address or mobile number' aaname='' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="f6d4cbec-4067-44bb-ade2-b801142ca679" InformativeScreenshot="9cb660123f6a807251a026f095a0f653.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Zoho Accounts' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive">
+                  <uix:TargetAnchorable.PointOffset>
+                    <uix:PointOffset />
+                  </uix:TargetAnchorable.PointOffset>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+              <uix:NTypeInto.VerifyOptions>
+                <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionTypeIntoOptions.Retry>
+                  <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                </uix:VerifyExecutionTypeIntoOptions>
+              </uix:NTypeInto.VerifyOptions>
+            </uix:NTypeInto>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click ''Next''" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,225.6" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="791fff33-2dc7-42ed-b7ec-01c9b2d31693" Version="V5">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="accounts.zoho.in/signin" CVScreenId="56e0869b-92aa-4a81-a643-d083397f4723" CvTextArea="471, 690, 416, 26" CvTextArgument="businesses of all sizes, built by a" CvType="Text" DesignTimeRectangle="475, 684, 498, 55" DesignTimeScaleFactor="1.25" ElementType="Button" FullSelectorArgument="&lt;webctrl id='nextbtn' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl id='nextbtn' tag='BUTTON' type='' class='btn blue' aaname='Next' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Next' /&gt;" Guid="6f731b34-1064-43cf-81b6-188779389d3b" InformativeScreenshot="c816a279c8ffdd2955463d5d0d2f2c48.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Zoho Accounts' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target CVScreenId="56e0869b-92aa-4a81-a643-d083397f4723" CvTextArea="690, 691, 73, 27" CvTextArgument="sizes," CvType="Text" DesignTimeRectangle="703, 702, 42, 20" ElementType="Text" FullSelectorArgument="&lt;webctrl parentid='nextbtn' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='nextbtn' tag='SPAN' type='' class='' aaname='Next' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Next' /&gt;" Guid="bc0b9a8f-eac3-4e2b-805e-743386178ab0" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                  <uix:TargetAnchorable.PointOffset>
+                    <uix:PointOffset />
+                  </uix:TargetAnchorable.PointOffset>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into ''akhileshgolupatidar@gma…''" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,286.4" sap2010:WorkflowViewState.IdRef="NTypeInto_3" IsPassword="True" ScopeIdentifier="791fff33-2dc7-42ed-b7ec-01c9b2d31693" Text="Wisdom@431" Version="V5">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="accounts.zoho.in/signin" CVScreenId="56e0869b-92aa-4a81-a643-d083397f4723" CvTextArea="471, 690, 416, 26" CvTextArgument="businesses of all sizes, built by a" CvType="Text" DesignTimeRectangle="475, 681, 498, 55" DesignTimeScaleFactor="1.25" ElementType="InputBoxPassword" FullSelectorArgument="&lt;webctrl id='password' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='password' tag='INPUT' type='password' class='textbox' placeholder='Enter password' aaname='' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="ca7adb3c-e5b2-47c2-b5f9-7714938d9e0a" InformativeScreenshot="a937846966afb4ede7c467a97c1c89f1.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Zoho Accounts' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target CVScreenId="56e0869b-92aa-4a81-a643-d083397f4723" CvTextArea="586, 641, 234, 27" CvTextArgument="suite transform" CvType="Text" DesignTimeRectangle="476, 600, 342, 55" ElementType="Text" FullSelectorArgument="&lt;webctrl class='username' parentid='password_container' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl class='username' parentid='password_container' tag='DIV' type='' aaname='akhileshgolupatidar@gmail.com' matching:class='fuzzy' fuzzylevel:class='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='akhileshgolupatidar@gmail.com' /&gt;" Guid="b9021c30-a5f1-4d78-94ce-2acda375ee07" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                  <uix:TargetAnchorable.PointOffset>
+                    <uix:PointOffset />
+                  </uix:TargetAnchorable.PointOffset>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+              <uix:NTypeInto.VerifyOptions>
+                <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionTypeIntoOptions.Retry>
+                  <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                </uix:VerifyExecutionTypeIntoOptions>
+              </uix:NTypeInto.VerifyOptions>
+            </uix:NTypeInto>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click ''Sign in''" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,225.6" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="791fff33-2dc7-42ed-b7ec-01c9b2d31693" Version="V5">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="accounts.zoho.in/signin" DesignTimeRectangle="475, 824, 498, 55" DesignTimeScaleFactor="1.25" ElementType="Button" FullSelectorArgument="&lt;webctrl id='nextbtn' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl id='nextbtn' tag='BUTTON' type='' class='btn blue' aaname='Sign in' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Sign in' /&gt;" Guid="78bb83d3-c938-492b-b8f2-134c5b4a578f" InformativeScreenshot="1430ea8a6f6e7c4c63b5e38612c66879.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Zoho Accounts' /&gt;" SearchSteps="FuzzySelector" Version="V6" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target DesignTimeRectangle="694, 841, 61, 20" ElementType="Text" FullSelectorArgument="&lt;webctrl parentid='nextbtn' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='nextbtn' tag='SPAN' type='' class='' aaname='Sign in' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Sign in' /&gt;" Guid="0251f0c3-7178-4805-8ddc-c755c59fab29" SearchSteps="FuzzySelector" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                  <uix:TargetAnchorable.PointOffset>
+                    <uix:PointOffset />
+                  </uix:TargetAnchorable.PointOffset>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click ''SPAN''" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,225.6" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="791fff33-2dc7-42ed-b7ec-01c9b2d31693" Version="V5">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="home.zoho.in/home" CVScreenId="db1889df-1e1e-42c9-88d9-1b5575aefa30" CvElementArea="546, 328, 131, 127" CvType="Icon" DesignTimeRectangle="553, 334, 120, 120" DesignTimeScaleFactor="1.25" FullSelectorArgument="&lt;webctrl parentid='zl-myapps' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='zl-myapps' tag='SPAN' type='' class='_logo-chat _logo-x96 zod-app-logo' aaname='' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="354a8b1a-78cf-4e2b-8c2b-21dad3fbdb5a" ImageBase64="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" InformativeScreenshot="04e1379383b3f43d35b1f9ac714a983d.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Zoho Home' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive">
+                  <uix:TargetAnchorable.PointOffset>
+                    <uix:PointOffset />
+                  </uix:TargetAnchorable.PointOffset>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click ''Join existing business''" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,225.6" sap2010:WorkflowViewState.IdRef="NClick_5" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="791fff33-2dc7-42ed-b7ec-01c9b2d31693" Version="V5">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="cliq.zoho.in/createcompany.do" CVScreenId="799844c5-f8a7-4db5-8435-8f553604d799" CvElementArea="1000, 718, 269, 54" CvTextArea="1039, 736, 189, 17" CvTextArgument="Join existing business" CvType="Button" DesignTimeRectangle="1003, 720, 263, 50" DesignTimeScaleFactor="1.25" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Join existing business' parentid='joinorcreate' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Join existing business' parentid='joinorcreate' tag='DIV' type='' class='btn font15 mT20 fontB' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Join existing business' /&gt;" Guid="6db312ca-6713-4977-adc6-0fe88be8131a" InformativeScreenshot="cac87dc01a47fc2dcda31a71ada8a3ff.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Cliq - Chat that&amp;apos;s built for work.' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive">
+                  <uix:TargetAnchorable.PointOffset>
+                    <uix:PointOffset />
+                  </uix:TargetAnchorable.PointOffset>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into ''Your colleague's email …''" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,286.4" sap2010:WorkflowViewState.IdRef="NTypeInto_4" ScopeIdentifier="791fff33-2dc7-42ed-b7ec-01c9b2d31693" Text="akhileshgolupatidar@gmail.com" Version="V5">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="cliq.zoho.in/createcompany.do" DesignTimeRectangle="1046, 627, 575, 45" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='teammate_mailidfield' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='teammate_mailidfield' tag='INPUT' type='text' class='zcl-input' placeholder='Eg: scott@gmail.com' aaname='' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="a8e6106d-d3e3-4727-8650-3713546af8ce" InformativeScreenshot="bec99530454b526106ce51af66aa1e1f.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Cliq - Chat that&amp;apos;s built for work.' /&gt;" SearchSteps="FuzzySelector" Version="V6" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target DesignTimeRectangle="1046, 592, 575, 25" ElementType="Text" FullSelectorArgument="&lt;webctrl parentid='teammate_mailidholder' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='teammate_mailidholder' tag='DIV' type='' class='label-txt-hdr' aaname='Your colleague&amp;apos;s email address ' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Your colleague&amp;apos;s email address' /&gt;" Guid="6ee72d81-4b75-4d2e-b3bc-3266eb466df0" SearchSteps="FuzzySelector" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                  <uix:TargetAnchorable.PointOffset>
+                    <uix:PointOffset />
+                  </uix:TargetAnchorable.PointOffset>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+              <uix:NTypeInto.VerifyOptions>
+                <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionTypeIntoOptions.Retry>
+                  <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                </uix:VerifyExecutionTypeIntoOptions>
+              </uix:NTypeInto.VerifyOptions>
+            </uix:NTypeInto>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click ''Find the Company''" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,225.6" sap2010:WorkflowViewState.IdRef="NClick_6" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="791fff33-2dc7-42ed-b7ec-01c9b2d31693" Version="V5">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="cliq.zoho.in/createcompany.do" DesignTimeRectangle="1096, 722, 475, 57" DesignTimeScaleFactor="1.25" ElementType="Button" FullSelectorArgument="&lt;webctrl id='findcompanybtn' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl id='findcompanybtn' tag='BUTTON' type='' class='btn-large mT40 mB10' aaname='Find the Company' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Find the Company' /&gt;" Guid="7f4c0c4e-ff78-4ee9-85ae-49ab95becbba" InformativeScreenshot="a8644d1060313c8b96053406956a3750.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Cliq - Chat that&amp;apos;s built for work.' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive">
+                  <uix:TargetAnchorable.PointOffset>
+                    <uix:PointOffset />
+                  </uix:TargetAnchorable.PointOffset>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NGetText DisplayName="Get Text ''Oops.. this email addre…''" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,182.4" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="791fff33-2dc7-42ed-b7ec-01c9b2d31693" TextString="[clipError]" Version="V5">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable BrowserURL="cliq.zoho.in/createcompany.do" DesignTimeRectangle="1046, 668, 575, 21" DesignTimeScaleFactor="1.25" ElementType="Text" FullSelectorArgument="&lt;webctrl id='finderrortxt' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl id='finderrortxt' tag='DIV' type='' class='err_txt' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' /&gt;" Guid="08e41864-11ca-4d21-aa3c-c2f790fff5a8" InformativeScreenshot="fb1962e566b0d8924eef61215e4146e0.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Cliq - Chat that&amp;apos;s built for work.' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive">
+                  <uix:TargetAnchorable.PointOffset>
+                    <uix:PointOffset />
+                  </uix:TargetAnchorable.PointOffset>
+                </uix:TargetAnchorable>
+              </uix:NGetText.Target>
+            </uix:NGetText>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-9, -9, 1938, 1048" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAMHSURBVDhPbZNrSBRRFMeHLIjog30pTcx8FVZWVFYfVIJCqYz6EgVFW2j0ogcmttEDQdClMKISt3eaBaXtsq5raVRSlJWKgqu1pG6uu5quzj6mXbszd+bfnV39pH84MJx7fn/OPXMPNyUAs1jEsMhgoQGlJd4Jv9Hmc1m//OkWPg9bZYcw6pAVWcfOoyaxsFhikSKKxWJPjzXwyuDx37otegq1aDudiz0VGkRX7UPUk73YWHsK5V0m2UcCBpWZgqMUQTD4797DcOYWOJenwJmQBGd8IobiEnD+4AZw+ixEVGRhNov593NwreMFWCfFUwY6obKKOlNWMjA5DCcvh2vVatgz0qHVHcaexiLkWC5hwcPdmKPPRvKzQ+h093YxNoajrqGBkV27Q6ArdQ34CxcRqKnFvy8tCP62g5/wQ5QpghLB0eYbIYN593aiyvaWZwYZHGlto0Pr00Itu4/kQgkGWX5mPf7xBnPvbg+ZFLdViyyl4Uh7uzCUthmDcYkYyzsGNsxw9Qx67+xAJLuGOo+8D2VsDkopJ/Xbre6DWeCPx8KjzYHs9UyWT5eNd2Fp5SFE6Ldhx6sSeALEyMk+r/Ff3X6QuigQyzoo3t7J8uniAwRbyysRWXQZW64ZYR8JWDkocqnUcQ7EFM0MkiC7P02WT5dIZeTpW7HkRD3Wa5vQ1scL6m/U0J9lIjEtZl3EQh54Hq6eQUFCoSn/hiUnzVhb2IjWvnGqGmTIjhc8McexLhZD6sgH6ASgSKDEC8eoF59tY3jZ4kBhdSdW5L9G3Ckzduo+wsUHB1SDGMVr7RLfbgoZEEsypJYDkL9r0FhTgMwrDUhhUMLp+hCoxrKzFjxptlPG6sKvkT1L+usOiDk+bMLmQU0Lcb3sKGJOWEItq2DSGQvSr75DRVMvhAlJ3YfwUrGPRZD8Btr/SBabs0Fer4L0JhU28z5oH9Sh4GknbjbYxNqvg57uQZ+VDbNYZULwlFQ31olOCbocyvh3WRlvFfC3z0qJz0hlpYSda1ioq66u/KwwxXH/AUVL7Oa+h12CAAAAAElFTkSuQmCC" InformativeScreenshot="41623b2206bf989953db1e01a3f7cce9.jpg" Selector="&lt;html app='chrome.exe' title='Zoho | Cloud Software Suite for Businesses' /&gt;" Url="https://www.zoho.com/" Version="V2" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
